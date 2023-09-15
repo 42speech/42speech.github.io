@@ -115,7 +115,7 @@
                   <li>TF-GridNet<sup>[3]</sup> - mixture and separated source samples are downloaded from this <a href="https://zqwang7.github.io/demos/TF-GridNet-demo"> link</a> </li>
 		  <li>SepEDA<sup>[4]</sup> - mixture and separated source samples are downloaded from this <a href="https://www.audiolabs-erlangen.de/resources/2022-Interspeech-BSS-EDA"> link</a> </li>
                 </ul>
-		The number within parentheses represents the SI-SDR improvement value over the mixture.
+		The number within parentheses represents the SI-SDR improvement value over the mixture in dB scale.
             </p>
             <style type="text/css">
                 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -136,8 +136,8 @@
                 <tr>
                   <th>Mixture input</th>
                   <th>Ground Truth</th>
-                  <th>SepTDA<sub>2/3</sub> (19.39 dB)</th>
-                  <th>TF-GridNet (19.59 dB)</th>
+                  <th>SepTDA<sub>2/3</sub> (19.4)</th>
+                  <th>TF-GridNet (19.6)</th>
                 </tr>
               </thead>
               <tbody>
@@ -169,9 +169,49 @@
               </tbody>
             </table>
 
-
-
               <br>  </br>
+
+            <center>
+            <h3>WSJ-2mix Dataset Samples with SepEDA</h3>
+            <p></p>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Mixture input</th>
+                  <th>Ground Truth</th>
+                  <th>SepTDA<sub>2/3</sub> (25.2)</th>
+                  <th>SepEDA (22.7)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-top:1px solid black">
+                  <td rowspan="2"><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/SepEDA23_2_item1_mix.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/SepEDA23_2_item1_source1.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/sepeda_s2.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/SepEDA23_2_item1_source1hat.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/SepEDA23_2_item1_source2.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/sepeda_s1.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/2mix/sepeda/SepEDA23_2_item1_source2hat.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+              </tbody>
+            </table>
 
 
             <h3>WSJ-3mix Dataset Samples</h3>
