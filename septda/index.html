@@ -115,7 +115,7 @@
                   <li>TF-GridNet<sup>[3]</sup> - mixture and separated source samples are downloaded from this <a href="https://zqwang7.github.io/demos/TF-GridNet-demo"> link</a> </li>
 		  <li>SepEDA<sup>[4]</sup> - mixture and separated source samples are downloaded from this <a href="https://www.audiolabs-erlangen.de/resources/2022-Interspeech-BSS-EDA"> link</a> </li>
                 </ul>
-		The number within parentheses represents the SI-SDR improvement value over the mixture in dB scale.
+		Note that the number within parentheses represents the SI-SDR improvement value over the mixture in dB scale.
             </p>
             <style type="text/css">
                 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -194,7 +194,7 @@
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/2mix/sepeda/sepeda_s2.wav"
-                        type="audio/wav"></audio></td>
+                        type="audio/wav"></audio></td> 22.7
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/2mix/sepeda/SepEDA23_2_item1_source1hat.wav"
                         type="audio/wav"></audio></td>
@@ -214,7 +214,7 @@
             </table>
 
 
-            <h3>WSJ-3mix Dataset Samples</h3>
+            <h3>WSJ-2mix Dataset Samples with Gated DPRNN</h3>
             <p></p>
             <p></p>
             <table>
@@ -222,14 +222,13 @@
                 <tr>
                   <th>Mixture input</th>
                   <th>Ground Truth</th>
-                  <th>Ours</th>
-                  <th>DPRNN</th>
-                  <th>Conv-TasNet</th>
+                  <th>SepTDA<sub>2/3</sub> (25.4, 25.3)</th>
+                  <th>Gated DPRNN (20.4, 19.3)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr style="border-top:1px solid black">
-                  <td rowspan="3"><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                  <td rowspan="2"><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/dprnn3/422o030m_0.69126_442o030i_-0.69126_446o0312_0.wav"
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
@@ -240,9 +239,6 @@
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/dprnn3/422o030m_0.69126_442o030i_-0.69126_446o0312_0_s2.wav"
-                        type="audio/wav"></audio></td>
-                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
-                      <source src="src/samples/conv3/422o030m_0.69126_442o030i_-0.69126_446o0312_0_s3.wav"
                         type="audio/wav"></audio></td>
                 </tr>
                 <tr>
@@ -255,9 +251,6 @@
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/dprnn3/422o030m_0.69126_442o030i_-0.69126_446o0312_0_s3.wav"
                         type="audio/wav"></audio></td>
-                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
-                      <source src="src/samples/conv3/422o030m_0.69126_442o030i_-0.69126_446o0312_0_s1.wav"
-                        type="audio/wav"></audio></td>
                 </tr>
                 <tr>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
@@ -268,9 +261,6 @@
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/dprnn3/422o030m_0.69126_442o030i_-0.69126_446o0312_0_s1.wav"
-                        type="audio/wav"></audio></td>
-                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
-                      <source src="src/samples/conv3/422o030m_0.69126_442o030i_-0.69126_446o0312_0_s2.wav"
                         type="audio/wav"></audio></td>
                 </tr>
                 <tr style="border-top:1px solid black">
