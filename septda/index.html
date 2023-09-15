@@ -52,7 +52,7 @@
     <header class="bg-dark text-white">
       <div class="container text-center">
         <h1>Boosting Unknown-number Speaker Separation with Transformer Decoder-based Attractor</h1>
-        <p style="color:red;font-size:18px;">Submitted as a conference paper at "IEEE International Conference on Acoustics, Speech and Signal Processing" - ICASSP 2024</p>
+        <p style="color:red;font-size:18px;">Submitted as conference paper at "IEEE International Conference on Acoustics, Speech and Signal Processing" - ICASSP 2024</p>
         <p class="lead"><a href="mailto:younglo.lee@42dot.ai" target="_top">Younglo Lee</a>, <a
             href="mailto:shukjae.choi@42dot.ai" target="_top">Shukjae Choi</a>, <a href="mailto:byeongyeol.kim@42dot.ai" target="_top">Byeong-Yeol Kim</a>, <a href="mailto:wang.zhongqiu41@gmail.com" target="_top">Zhong-Qiu Wang</a>, <a href="mailto:swatanab@andrew.cmu.edu" target="_top">Shinji Watanabe</a></p>
         <small>Conversation Intelligence, 42dot Inc. and Language Technologies Institute, Carnegie Mellon University</small>
@@ -75,7 +75,7 @@
                   Given a fixed, small set of learned speaker queries and the mixture embedding produced by the dual-path blocks, TDA infers the relations of these queries and generates an attractor vector for each speaker.
                   The estimated attractors are then combined with the mixture embedding by feature-wise linear modulation conditioning, creating a speaker dimension.
                   The mixture embedding, conditioned with speaker information produced by TDA, is fed to the final triple-path blocks, which augment the dual-path blocks with an additional pathway dedicated to inter-speaker processing.
-                  The proposed approach outperforms the previous best reported in the literature, achieving \finalsisdrtwo~and \finalsisdrthree~dB $\Delta\text{SI-SDR}$ on WSJ0-2 and 3mix respectively, with a single model trained to separate 2- and 3-speaker mixtures.
+                  The proposed approach outperforms the previous best reported in the literature, achieving 24.0 and 23.7 SI-SDR improvement on WSJ0-2 and 3mix respectively, with a single model trained to separate 2- and 3-speaker mixtures.
                   The proposed model also exhibits strong performance and generalizability at counting sources and separating mixtures with up to 5 speakers.
               </p><p class="lead" align="justify">
               </p><p class="lead" align="justify">
@@ -87,6 +87,11 @@
               <b>
                 Link to 2-3 speaker dataset <sup>[1]</sup> - <a href="https://www.merl.com/demos/deep-clustering/create-speaker-mixtures.zip"> Download from MERL website</a>
               </b>
+              </p><p class="lead" align="justify">
+              <b>
+                We followed the format of the page linked - <a href="https://enk100.github.io/speaker_separation/"> Link</a>
+              </b>
+		      
 
 
 
