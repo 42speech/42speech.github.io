@@ -115,7 +115,7 @@
                   <li>TF-GridNet<sup>[3]</sup> - mixture and separated source samples are downloaded from this <a href="https://zqwang7.github.io/demos/TF-GridNet-demo"> link</a> </li>
 		  <li>SepEDA<sup>[4]</sup> - mixture and separated source samples are downloaded from this <a href="https://www.audiolabs-erlangen.de/resources/2022-Interspeech-BSS-EDA"> link</a> </li>
                 </ul>
-		Note that the number within parentheses represents the SI-SDR improvement value over the mixture in dB scale.
+		Note that the number within parentheses represents the average SI-SDR improvement value over the mixture in dB scale.
             </p>
             <style type="text/css">
                 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -236,7 +236,7 @@
                       <source src="src/samples/2mix/mulcat1/22go0106_0.742_440o030p_-0.742_s1_gt.wav"
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
-                      <source src="src/samples/2mix/mulcat1/mulcat_s1.wav"
+                      <source src="src/samples/2mix/mulcat1/mulcat1_s1.wav"
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/2mix/mulcat1/22go0106_0.742_440o030p_-0.742_s2.wav"
@@ -247,7 +247,7 @@
                       <source src="src/samples/2mix/mulcat1/22go0106_0.742_440o030p_-0.742_s2_gt.wav"
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
-                      <source src="src/samples/2mix/mulcat1/mulcat_s2.wav"
+                      <source src="src/samples/2mix/mulcat1/mulcat1_s2.wav"
                         type="audio/wav"></audio></td>
                   <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
                       <source src="src/samples/2mix/mulcat1/22go0106_0.742_440o030p_-0.742_s1.wav"
@@ -280,6 +280,64 @@
                 </tr>
               </tbody>
             </table>
+
+
+
+              <br>  </br>
+
+
+            <h3>WSJ-3mix Dataset Samples with SepEDA</h3>
+            <p></p>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Mixture input</th>
+                  <th>Ground Truth</th>
+                  <th>SepTDA<sub>2/3</sub> (23.4)</th>
+                  <th>SepEDA (20.1)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-top:1px solid black">
+                  <td rowspan="3"><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1_mix.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1__source1.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/sepeda_s3.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1__source1hat.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1__source2.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/sepeda_s1.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1__source2hat.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1__source3.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/sepeda_s2.wav"
+                        type="audio/wav"></audio></td>
+                  <td><audio controls class="audio-player" preload="metadata" style="width: 180px;">
+                      <source src="src/samples/3mix/sepeda/SepEDA23_3_item1__source3hat.wav"
+                        type="audio/wav"></audio></td>
+                </tr>
+              </tbody>
+            </table>
+
 
               <br>  </br>
 
