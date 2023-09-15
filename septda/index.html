@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SepTDA unknown-speaker separation samples demo page</title>
+    <title>SepTDA Unknown-speaker Separation Samples Demo Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,10 +52,10 @@
     <header class="bg-dark text-white">
       <div class="container text-center">
         <h1>Boosting Unknown-number Speaker Separation with Transformer Decoder-based Attractor</h1>
-        <p style="color:red;font-size:18px;">Submitted as conference paper at "IEEE International Conference on Acoustics, Speech and Signal Processing" - ICASSP 2024</p>
+        <p style="color:red;font-size:18px;">Submitted as a conference paper at "IEEE International Conference on Acoustics, Speech and Signal Processing" - ICASSP 2024</p>
         <p class="lead"><a href="mailto:younglo.lee@42dot.ai" target="_top">Younglo Lee</a>, <a
             href="mailto:shukjae.choi@42dot.ai" target="_top">Shukjae Choi</a>, <a href="mailto:byeongyeol.kim@42dot.ai" target="_top">Byeong-Yeol Kim</a>, <a href="mailto:wang.zhongqiu41@gmail.com" target="_top">Zhong-Qiu Wang</a>, <a href="mailto:swatanab@andrew.cmu.edu" target="_top">Shinji Watanabe</a></p>
-        <small>42dot Inc., Seoul, Korea and Language Technologies Institute, Carnegie Mellon University, Pittsburgh, USA</small>
+        <small>Conversation Intelligence, 42dot Inc. and Language Technologies Institute, Carnegie Mellon University</small>
       </div>
     </header>
 
@@ -68,13 +68,15 @@
           <div class="col-md-15 mx-auto">
             <!--<h2>Course Details</h2>-->
             <p class="lead" align="justify">
-            This post presents "Voice Separation with an Unknown Number of Multiple Speakers",
-                a deep model for multi speaker voice separation with single microphone.
+            We present "Boosting Unknown-number Speaker Separation with Transformer Decoder-based Attractor", speech separation model for 2 to 5 speech mixture on monaural signal.
                 </p><p class="lead" align="justify">
-                We present a new method for separating a mixed audio sequence, in which multiple voices speak simultaneously.
-                The new method employs gated neural networks that are trained to separate the voices at multiple processing steps, while maintaining the speaker in each output channel fixed.
-                A different model is trained for every number of possible speakers, and a the model with the largest number of speakers is employed to select the actual number of speakers in a given sample.
-                Our method greatly outperforms the current state of the art, which, as we show, is not competitive for more than two speakers.
+                We propose a novel speech separation model designed to separate mixtures with an unknown number of speakers.
+                  The proposed model stacks 1) a dual-path processing block that can model spectro-temporal patterns, 2) a transformer decoder-based attractor (TDA) calculation module that can deal with an unknown number of speakers, and 3) triple-path processing blocks that can model inter-speaker relations.
+                  Given a fixed, small set of learned speaker queries and the mixture embedding produced by the dual-path blocks, TDA infers the relations of these queries and generates an attractor vector for each speaker.
+                  The estimated attractors are then combined with the mixture embedding by feature-wise linear modulation conditioning, creating a speaker dimension.
+                  The mixture embedding, conditioned with speaker information produced by TDA, is fed to the final triple-path blocks, which augment the dual-path blocks with an additional pathway dedicated to inter-speaker processing.
+                  The proposed approach outperforms the previous best reported in the literature, achieving \finalsisdrtwo~and \finalsisdrthree~dB $\Delta\text{SI-SDR}$ on WSJ0-2 and 3mix respectively, with a single model trained to separate 2- and 3-speaker mixtures.
+                  The proposed model also exhibits strong performance and generalizability at counting sources and separating mixtures with up to 5 speakers.
               </p><p class="lead" align="justify">
               </p><p class="lead" align="justify">
               </p><p class="lead" align="justify">
