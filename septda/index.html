@@ -142,10 +142,10 @@
 
               <section id="2mix"></section>
                 <center>
-            <h3>WSJ0-2mix samples with TF-GridNet</h3>
-            
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
+            <h3>WSJ0-2mix separation samples</h3>
+
+            <p align="justify">Separation results of the SepTDA<sub>2/3</sub> model trained on WSJ0-{2,3}mix and comparison results with TF-GridNet<sup><a href="#References">[2]</a></sup>, SepEDA<sup><a href="#References">[3]</a></sup>, and Gated DPRNN<sup><a href="#References">[1]</a></sup>.</p>
+
             <p></p>
             <table>
               <thead>
@@ -192,13 +192,6 @@
                 </tr>
               </tbody>
             </table>
-
-              <br>  </br>
-
-            <center>
-            <h3>WSJ0-2mix samples with SepEDA</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
             <p></p>
             <table>
               <thead>
@@ -248,19 +241,14 @@
                 </tr>
               </tbody>
             </table>
-
-              <br>  </br>
-
-            <h3>WSJ0-2mix samples with Gated DPRNN</h3>
-            <p></p>
             <p></p>
             <table>
               <thead>
                 <tr>
                   <th>Mixture input</th>
                   <th>Ground Truth</th>
-                  <th>SepTDA<sub>2/3</sub> (SI-SDRi 25.4, 25.3 dB)</th>
-                  <th>Gated DPRNN (SI-SDRi 20.4, 19.3 dB)</th>
+                  <th>SepTDA<sub>2/3</sub> (SI-SDRi 25.4 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 20.4 dB)</th>
                 </tr>
               </thead>
               <tbody>
@@ -297,6 +285,19 @@
                       <source src="src/samples/2mix/mulcat1/22go0106_0.742_440o030p_-0.742_s1.wav"
                         type="audio/wav"></audio></td>
                 </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Mixture input</th>
+                  <th>Ground Truth</th>
+                  <th>SepTDA<sub>2/3</sub> (SI-SDRi 25.3 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 19.3 dB)</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr style="border-top:1px solid black">
                   <td rowspan="2">
 			  <img src="src/samples/2mix/mulcat2/421c020j_1.394_444c020x_-1.394.png"class="spec"alt=""/><br />
@@ -333,14 +334,12 @@
               </tbody>
             </table>
 
-
-
               <br>  </br>
 
               <section id="3mix"></section>
-            <h3>WSJ0-3mix samples with SepEDA</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
+            <h3>WSJ0-3mix separation samples</h3>
+            <p align="justify">Separation results of the SepTDA<sub>2/3</sub> model trained on WSJ0-{2,3}mix and comparison results with SepEDA<sup><a href="#References">[3]</a></sup>, and Gated DPRNN<sup><a href="#References">[1]</a></sup>.</p>
+
             <p></p>
             <table>
               <thead>
@@ -401,23 +400,14 @@
                 </tr>
               </tbody>
             </table>
-
-
-
-              <br>  </br>
-
-
-            <h3>WSJ0-3mix samples with Gated DPRNN</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
             <p></p>
             <table>
               <thead>
                 <tr>
                   <th>Mixture input</th>
                   <th>Ground Truth</th>
-                  <th>SepTDA<sub>2/3</sub> (SI-SDRi 25.1, 16.6 dB)</th>
-                  <th>Gated DPRNN (SI-SDRi 18.9, 13.0 dB)</th>
+                  <th>SepTDA<sub>2/3</sub> (SI-SDRi 25.1 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 18.9 dB)</th>
                 </tr>
               </thead>
               <tbody>
@@ -468,6 +458,19 @@
                       <source src="src/samples/3mix/422c0201_0.14718_441o0313_-0.14718_447o030u_0_s3.wav"
                         type="audio/wav"></audio></td>
                 </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Mixture input</th>
+                  <th>Ground Truth</th>
+                  <th>SepTDA<sub>2/3</sub> (SI-SDRi 16.6 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 13.0 dB)</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr style="border-top:1px solid black">
                   <td rowspan="3">
 			  <img src="src/samples/3mix/mulcat2/422o030m_0.69126_442o030i_-0.69126_446o0312_0.png"class="spec"alt=""/><br />
@@ -522,9 +525,9 @@
               <br>  </br>
 
               <section id="4mix"></section>
-            <h3>WSJ0-4mix samples with SepEDA</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
+            <h3>WSJ0-4mix separation samples</h3>
+            <p align="justify">Separation results of the SepTDA<sub>[2-5]</sub> model trained on WSJ0-{2,3,4,5}mix and comparison results with SepEDA<sup><a href="#References">[3]</a></sup>, and Gated DPRNN<sup><a href="#References">[1]</a></sup>.</p>
+
             <p></p>
             <table>
               <thead>
@@ -599,22 +602,14 @@
                 </tr>
               </tbody>
             </table>
-
-
-              <br>  </br>
-
-
-            <h3>WSJ0-4mix samples with Gated DPRNN</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
             <p></p>
             <table>
               <thead>
                 <tr>
                   <th>Mixture input</th>
                   <th>Ground Truth</th>
-                  <th>SepTDA<sub>[2-5]</sub> (SI-SDRi 23.6, 21.7 dB)</th>
-                  <th>Gated DPRNN (SI-SDRi 16.1, 17.0 dB)</th>
+                  <th>SepTDA<sub>[2-5]</sub> (SI-SDRi 23.6 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 16.1 dB)</th>
                 </tr>
               </thead>
               <tbody>
@@ -679,6 +674,19 @@
                       <source src="src/samples/4mix/mulcat1/22go0107_2.411_440o030k_1.6598_446o030m_-1.6598_421o030r_-2.411_s1.wav"
                         type="audio/wav"></audio></td>
                 </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Mixture input</th>
+                  <th>Ground Truth</th>
+                  <th>SepTDA<sub>[2-5]</sub> (SI-SDRi 21.7 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 17.0 dB)</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr style="border-top:1px solid black">
                   <td rowspan="4">
 			  <img src="src/samples/4mix/mulcat2/22ho010z_0.70341_053o020b_0.96111_444c0210_-0.96111_050c0107_-0.70341.png"class="spec"alt=""/><br />
@@ -746,9 +754,9 @@
               <br>  </br>
 
               <section id="5mix"></section>
-            <h3>WSJ0-5mix samples with SepEDA</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
+            <h3>WSJ0-5mix separation samples</h3>
+            <p align="justify">Separation results of the SepTDA<sub>[2-5]</sub> model trained on WSJ0-{2,3,4,5}mix and comparison results with SepEDA<sup><a href="#References">[3]</a></sup>, and Gated DPRNN<sup><a href="#References">[1]</a></sup>.</p>
+
             <p></p>
             <table>
               <thead>
@@ -837,21 +845,14 @@
                 </tr>
               </tbody>
             </table>
-
-              <br>  </br>
-
-
-            <h3>WSJ0-5mix samples with Gated DPRNN</h3>
-            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
-            
             <p></p>
             <table>
               <thead>
                 <tr>
                   <th>Mixture input</th>
                   <th>Ground Truth</th>
-                  <th>SepTDA<sub>[2-5]</sub> (SI-SDRi 23.2, 23.9 dB)</th>
-                  <th>Gated DPRNN (SI-SDRi 15.9, 15.2 dB)</th>
+                  <th>SepTDA<sub>[2-5]</sub> (SI-SDRi 23.2 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 15.9 dB)</th>
                 </tr>
               </thead>
               <tbody>
@@ -930,6 +931,19 @@
                       <source src="src/samples/5mix/mulcat1/22gc010q_1.9223_052c010w_0.54576_445o0311_-0.54576_050o020d_-1.9223_447c0210_0_s1.wav"
                         type="audio/wav"></audio></td>
                 </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Mixture input</th>
+                  <th>Ground Truth</th>
+                  <th>SepTDA<sub>[2-5]</sub> (SI-SDRi 23.9 dB)</th>
+                  <th>Gated DPRNN (SI-SDRi 15.2 dB)</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr style="border-top:1px solid black">
                   <td rowspan="5">
 			  <img src="src/samples/5mix/mulcat2/443o030v_2.2076_441c020w_1.508_22hc010q_-1.508_053o020z_-2.2076_440o030x_0.png"class="spec"alt=""/><br />
