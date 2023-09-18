@@ -29,14 +29,24 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
+              <a class="nav-link js-scroll-trigger" href="#intro">Introduction</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#samples">Samples</a>
             </li>
-            <!--<li class="nav-item">-->
-              <!--<a class="nav-link js-scroll-trigger" href="#Comparison">Comparison</a>-->
-            <!--</li>-->
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#2mix">2mix</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#3mix">3mix</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#4mix">4mix</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#5mix">5mix</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#References">References</a>
             </li>
@@ -52,10 +62,13 @@
     <header class="bg-dark text-white">
       <div class="container text-center">
         <h1>Boosting Unknown-number Speaker Separation with Transformer Decoder-based Attractor</h1>
-        <p style="color:red;font-size:18px;">Submitted as conference paper at "IEEE International Conference on Acoustics, Speech and Signal Processing" - ICASSP 2024</p>
-        <p class="lead"><a href="mailto:younglo.lee@42dot.ai" target="_top">Younglo Lee</a>, <a
-            href="mailto:shukjae.choi@42dot.ai" target="_top">Shukjae Choi</a>, <a href="mailto:byeongyeol.kim@42dot.ai" target="_top">Byeong-Yeol Kim</a>, <a href="mailto:wang.zhongqiu41@gmail.com" target="_top">Zhong-Qiu Wang</a>, <a href="mailto:swatanab@andrew.cmu.edu" target="_top">Shinji Watanabe</a></p>
-        <small>Conversation Intelligence, 42dot Inc. and Language Technologies Institute, Carnegie Mellon University</small>
+        <p style="color:rgb(205, 168, 168);font-size:18px;">Submitted as conference paper at "IEEE International Conference on Acoustics, Speech and Signal Processing" - ICASSP 2024</p>
+        <p class="lead"><a href="mailto:younglo.lee@42dot.ai" target="_top"><sup>1</sup>Younglo Lee</a>, 
+          <a href="mailto:shukjae.choi@42dot.ai" target="_top"><sup>1</sup>Shukjae Choi</a>, 
+          <a href="mailto:byeongyeol.kim@42dot.ai" target="_top"><sup>1</sup>Byeong-Yeol Kim</a>, 
+          <a href="mailto:wang.zhongqiu41@gmail.com" target="_top"><sup>2</sup>Zhong-Qiu Wang</a>, 
+          <a href="mailto:swatanab@andrew.cmu.edu" target="_top"><sup>2</sup>Shinji Watanabe</a></p>
+          <sup>1</sup>Conversation Intelligence, 42dot Inc. and <sup>2</sup>Language Technologies Institute, Carnegie Mellon University
       </div>
     </header>
 
@@ -68,8 +81,10 @@
           <div class="col-md-15 mx-auto">
             <!--<h2>Course Details</h2>-->
             <p class="lead" align="justify">
-            We present "Boosting Unknown-number Speaker Separation with Transformer Decoder-based Attractor", speech separation model for 2 to 5 speech mixture on monaural signal.
-                </p><p class="lead" align="justify">
+            We present "Boosting Unknown-number Speaker Separation with Transformer Decoder-based Attractor" a speech separation model for 2 to 5 speech mixture on monaural signal.
+                </p>
+                <h2>Abstract</h2>
+                <p class="lead" align="justify">
                 We propose a novel speech separation model designed to separate mixtures with an unknown number of speakers.
                   The proposed model stacks 1) a dual-path processing block that can model spectro-temporal patterns, 2) a transformer decoder-based attractor (TDA) calculation module that can deal with an unknown number of speakers, and 3) triple-path processing blocks that can model inter-speaker relations.
                   Given a fixed, small set of learned speaker queries and the mixture embedding produced by the dual-path blocks, TDA infers the relations of these queries and generates an attractor vector for each speaker.
@@ -97,15 +112,16 @@
 
 
             <p class="lead" align="justify">
-                Here are some samples from our model for you to listen:
+              <h2>Samples</h2>
+                Here are some samples from our model for you to listen to:
                 <ul class="lead" align="justify" >
                   <li>Mixture input - original mixed audio</li>
                   <li>Ground Truth - original separated samples</li>
-                  <li>SepTDA<sub>2/3</sub> - our proposed model trained on WSJ0-2&3mix</li>
-                  <li>SepTDA<sub>[2-5]</sub> - our proposed model trained on WSJ0-2&3&4&5mix</li>
-                  <li>Gated DPRNN<sup>[1]</sup> - mixture and separated source samples are downloaded from this <a href="https://enk100.github.io/speaker_separation"> link</a> </li>
-                  <li>TF-GridNet<sup>[2]</sup> - mixture and separated source samples are downloaded from this <a href="https://zqwang7.github.io/demos/TF-GridNet-demo"> link</a> </li>
-		  <li>SepEDA<sup>[3]</sup> - mixture and separated source samples are downloaded from this <a href="https://www.audiolabs-erlangen.de/resources/2022-Interspeech-BSS-EDA"> link</a> </li>
+                  <li>SepTDA<sub>2/3</sub> - our proposed model trained on WSJ0-{2,3}mix</li>
+                  <li>SepTDA<sub>[2-5]</sub> - our proposed model trained on WSJ0-{2,3,4,5}mix</li>
+                  <li>Gated DPRNN<sup><a href="#References">[1]</a></sup> - mixture and separated source samples are downloaded from this <a href="https://enk100.github.io/speaker_separation"> link</a> </li>
+                  <li>TF-GridNet<sup><a href="#References">[2]</a></sup> - mixture and separated source samples are downloaded from this <a href="https://zqwang7.github.io/demos/TF-GridNet-demo"> link</a> </li>
+		  <li>SepEDA<sup><a href="#References">[3]</a></sup> - mixture and separated source samples are downloaded from this <a href="https://www.audiolabs-erlangen.de/resources/2022-Interspeech-BSS-EDA"> link</a> </li>
                 </ul>
 		Note that the number within parentheses represents the average SI-SDR improvement value over the mixture in dB scale.
             </p>
@@ -119,9 +135,11 @@
 
               <br>  </br>
 
-            <center>
-            <h3>WSJ0-2mix Samples with TF-GridNet</h3>
-            <p align="justify">Results for model that train on WSJ0-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+              <section id="2mix"></section>
+                <center>
+            <h3>WSJ0-2mix samples with TF-GridNet</h3>
+            
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -173,8 +191,8 @@
               <br>  </br>
 
             <center>
-            <h3>WSJ0-2mix Samples with SepEDA</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+            <h3>WSJ0-2mix samples with SepEDA</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -228,7 +246,7 @@
 
               <br>  </br>
 
-            <h3>WSJ0-2mix Samples with Gated DPRNN</h3>
+            <h3>WSJ0-2mix samples with Gated DPRNN</h3>
             <p></p>
             <p></p>
             <table>
@@ -314,9 +332,9 @@
 
               <br>  </br>
 
-
-            <h3>WSJ0-3mix Samples with SepEDA</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+              <section id="3mix"></section>
+            <h3>WSJ0-3mix samples with SepEDA</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -384,8 +402,8 @@
               <br>  </br>
 
 
-            <h3>WSJ0-3mix Samples with Gated DPRNN</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+            <h3>WSJ0-3mix samples with Gated DPRNN</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -498,9 +516,9 @@
 
               <br>  </br>
 
-
-            <h3>WSJ0-4mix Samples with SepEDA</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+              <section id="4mix"></section>
+            <h3>WSJ0-4mix samples with SepEDA</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -581,8 +599,8 @@
               <br>  </br>
 
 
-            <h3>WSJ0-4mix Samples with Gated DPRNN</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+            <h3>WSJ0-4mix samples with Gated DPRNN</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -722,9 +740,9 @@
 
               <br>  </br>
 
-
-            <h3>WSJ0-5mix Samples with SepEDA</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+              <section id="5mix"></section>
+            <h3>WSJ0-5mix samples with SepEDA</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
@@ -818,8 +836,8 @@
               <br>  </br>
 
 
-            <h3>WSJ0-5mix Samples with Gated DPRNN</h3>
-            <p align="justify">Results for model that train on WSJ-5mix and tested on WSJ-2mix. Results suggests that all model have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet which output noise and mixed signals in the rest of the output channels, our model produce silence with significantly less artifacts.  </p>
+            <h3>WSJ0-5mix samples with Gated DPRNN</h3>
+            <p align="justify">Results on the model that is trained on WSJ0-5mix and tested on WSJ0-2mix. The results suggest that all models have managed to separate the two speakers. However, compared to DPRNN and ConvTasNet, which output noise and mixed signals in the rest of the output channels, our model produces silence with significantly less artifacts.</p>
             
             <p></p>
             <table>
